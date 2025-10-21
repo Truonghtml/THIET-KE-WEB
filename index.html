@@ -1,11 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Sen:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body style="height: 10000px">
+    <!-- header -->
+ <!-- header -->
+<header class="header fixed">
+  <div class="main-content">
+    <div class="body">
+      <h1 class="logo">Trang An Catering</h1>
+
+      <!-- menu toggle icon cho mobile -->
+      <button class="menu-toggle">☰</button>
+
+      <!-- nav -->
+      <nav class="nav">
+        <ul>
+          <li><a href="#!">Home</a></li>
+          <li><a href="#!">Contract</a></li>
+          <li class="active"><a href="#!">Menu</a></li>
+          <li><a href="#!">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="action">
+        <a href="#!" class="btn btn-sign-up">Sign Up</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MENU -->
+<main class="menu-section">
+  <h2>Menu</h2>
+  <div class="main-content">
+    <div class="body">
+      <div class="menu-filter">
+        <button class="active" data-filter="all">Tất cả</button>
+        <button data-filter="breakfast">Ăn sáng</button>
+        <button data-filter="lunch">Ăn trưa</button>
+        <button data-filter="dinner">Ăn tối</button>
+        <button data-filter="dessert">Tráng miệng</button>
+        <button data-filter="drink">Đồ uống</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="body">
+      <div class="menu-grid">
+        <div class="menu-item" data-category="breakfast">
+          <img src="./assets/img/pho-bo.jfif" alt="pho-bo" />
+          <h3>Phở bò Hà Nội</h3>
+          <p>Món ăn truyền thống Việt Nam</p>
+          <span>30k</span>
+        </div>
+
+        <div class="menu-item" data-category="lunch">
+          <img src="./assets/img/bun-cha.webp" alt="bun-cha" />
+          <h3>Bún chả Hà Nội</h3>
+          <p>Thịt nướng đậm đà, ăn kèm rau sống</p>
+          <span>35k</span>
+        </div>
+
+        <div class="menu-item" data-category="breakfast">
+          <img src="./assets/img/banh-mi.jpg" alt="banh-mi" />
+          <h3>Bánh mì Việt Nam</h3>
+          <p>Giòn rụm, đậm đà hương vị</p>
+          <span>20k</span>
+        </div>
+
+        <div class="menu-item" data-category="lunch">
+          <img src="./assets/img/goi-cuon.jfif" alt="goi-cuon" />
+          <h3>Gỏi cuốn tôm thịt</h3>
+          <p>Món khai vị thanh mát</p>
+          <span>25k</span>
+        </div>
+
+        <div class="menu-item" data-category="dinner">
+          <img src="./assets/img/com-tam.jfif" alt="com-tam" />
+          <h3>Cơm tấm sườn bì chả</h3>
+          <p>Món cơm truyền thống miền Nam</p>
+          <span>40k</span>
+        </div>
+
+        <div class="menu-item" data-category="dessert">
+          <img src="./assets/img/che-ba-mau.jpg" alt="che-ba-mau" />
+          <h3>Chè ba màu</h3>
+          <p>Món tráng miệng ngọt mát</p>
+          <span>15k</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+      <footer>
+    <div class="container footer-container">
+      <h2>Trang An Catering</h2>
+      <p>Hotline: <a href="tel:+84987654321">+84 987 654 321</a></p>
+      <div class="socials">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">YouTube</a>
+      </div>
+      <p class="copyright">© 2025 Trang An Catering. All rights reserved.</p>
+    </div>
+  </footer>
+     <script src="script.js"></script>
+  </body>
 </html>
